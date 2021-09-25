@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.1.0/firebase-app-compat.js"></script>
-    
-    <link rel="stylesheet" href="css/index.css">
-    <script src="js/sizing.js"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Glow Hacks</title>
 
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.1.0/firebase-app-compat.js"></script>
 
-  </head>
-  <body >
-    <div class="neon-text block">
-      <h1 id="title">GLOW PONG</h1>
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/sizing.js"></script>
+
+  <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+</head>
+
+<body onLoad=sizeBlocks()>
+  <div class="neon-text block" >
+    <h1 id="title">GLOW PONG</h1>
+    <img src="images/glowstick-logo.png" id="logo">
+  </div>
+
+  <div class="neon-text block">
+    <div class="medium-block">
+      <div class="animation" >
+        <h2>TEST IMAGE</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel exercitationem ea culpa iste tenetur atque debitis iure. Aliquam, explicabo? Pariatur saepe laudantium sequi dolorem. Inventore necessitatibus doloribus debitis vel commodi.</p>
+      </div>
     </div>
 
-    <div class="neon-text block">
-      <h2 class="border">TEST IMAGE</h2>
+  </div>
+
+  <div class="neon-text block">
+    <div class="left-block">
+
     </div>
+  </div>
 
 
-    <script>
-    sizeBlocks();
-    </script>
-     </body>
+</body>
+
 </html>
