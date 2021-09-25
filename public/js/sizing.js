@@ -18,9 +18,9 @@ function sizeBlocks() {
 window.onscroll = function () {
     let diff = document.documentElement.scrollTop - height;
 
-    if (diff >= 0){
+    if (diff >= -1*(height*.2) && animations[0].className != 'block-two-animation border animation'){
         animations[0].className = 'block-two-animation border animation';
-    }else if(diff * -1 >= height-100){
+    }else if(diff * -1 >= height-100 && animations[0].className != 'border animation'){
         animations[0].className = 'border animation';
     }
        
