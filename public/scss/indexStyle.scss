@@ -1,0 +1,72 @@
+*{
+    margin:0;
+    padding: 0;
+    top:0;
+    left:0;    
+    cursor: url("../images/cursor/ball.png"), auto;
+}
+
+body{
+    background: url('../images/background/main-menu.png') no-repeat center center fixed;
+    background-size: cover;
+}
+.container{
+    width: 50%;
+    height: 100%;
+    text-align: center;
+    margin:auto;
+
+    a{
+        text-decoration: none;
+    }
+
+    a:hover{
+        cursor: url("../images/cursor/ball.png"), auto;
+    }
+}
+
+
+#title{
+    animation: flicker 2s infinite alternate;
+    color: white;
+    font-size: 10rem;
+    margin-top: 40%;
+}
+
+.appear{   
+    filter: brightness(10%);
+    &:hover{
+       animation: appear 0.5s linear forwards;
+    }
+}
+
+
+@keyframes flicker {
+    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {  
+        text-shadow:
+        0 0 4px white,
+        0 0 11px white,
+        0 0 20px white,
+        0 0 400px aqua,
+        0 0 800px aquamarine,
+        0 0 90px white,
+        0 0 100px white,
+        0 0 150px white;
+    
+    }
+    
+    20%, 24%, 55% {      
+        text-shadow: none;
+    }    
+
+  }
+
+  @keyframes appear {
+      0%{
+        filter:brightness(10%);
+      }      
+      100%{
+        filter:brightness(100%);
+      }
+  }
