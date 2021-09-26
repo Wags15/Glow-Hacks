@@ -37,6 +37,44 @@
     }    
   }
 
+  @keyframes blue-flicker {    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {  
+        text-shadow:
+        0 0 4px blue,
+        0 0 11px blue,
+        0 0 20px blue,
+        0 0 400px white,
+        0 0 800px blue,
+        0 0 90px white,
+        0 0 100px white,
+        0 0 150px blue;
+    
+    }
+    
+    20%, 24%, 55% {      
+        text-shadow: none;
+    }    
+  }
+
+  @keyframes red-flicker {    
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {  
+        text-shadow:
+        0 0 4px red,
+        0 0 11px red,
+        0 0 20px red,
+        0 0 400px white,
+        0 0 800px red,
+        0 0 90px white,
+        0 0 100px white,
+        0 0 150px red;
+    
+    }
+    
+    20%, 24%, 55% {      
+        text-shadow: none;
+    }    
+  }
+
   @keyframes appear {
       0%{
         filter:brightness(10%);

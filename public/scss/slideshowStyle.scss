@@ -84,6 +84,7 @@
 
     .image-box:nth-child(even) {
         .image {
+            width: 50%;
             box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem blue, 0 0 0.8rem blue, 0 0 2.8rem blue,
                 inset 0 0 1.3rem blue;
         }
@@ -100,6 +101,7 @@
 
     .image-box:nth-child(odd) {
         .image {
+            width: 60%;
             box-shadow: 0 0 0.2rem #fff, 0 0 0.2rem #fff, 0 0 2rem blue, 0 0 0.8rem blue, 0 0 2.8rem blue,
                 inset 0 0 1.3rem blue;
         }
