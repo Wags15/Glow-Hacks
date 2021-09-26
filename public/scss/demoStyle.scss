@@ -2,8 +2,11 @@
     background-color: black;   
     margin: 0;
     padding:0;    
-    
+    height: 100%; 
+    cursor: url("../images/cursor/ball.png"), auto;   
 }
+
+
 
 .container{
     width: 100%;
@@ -13,6 +16,68 @@
     justify-content: center;
 
     box-sizing: border-box;
-    border: 1rem solid white;
-    
+    border: .5rem solid white;  
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem blue,
+              0 0 0.8rem blue,
+              0 0 2.8rem blue,
+              inset 0.75rem 0.75rem 1.3rem blue,
+              inset -0.75rem -0.75rem 1.3rem blue;
 }
+
+.center-box{
+    border: .5rem solid white;  
+    box-shadow: 0 0 .2rem #fff,
+              0 0 .2rem #fff,
+              0 0 2rem red,
+              0 0 0.8rem red,
+              0 0 2.8rem red,
+              inset 0 0 1.3rem red;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 50%;
+}
+
+#demo-vid{
+    height: 100%;
+    width: 100%;
+}
+
+.appear{
+    position: absolute;
+    color: yellow;
+    height: auto;
+    bottom: 9%;
+    background-color: transparent;
+   
+
+    filter: brightness(10%);
+
+    &:hover{
+        animation: appear 0.5s linear forwards;
+        
+    }
+}
+
+a{
+    background-color: transparent;
+    text-decoration: none;
+    &:hover{
+        cursor: url("../images/cursor/ball.png"), auto;   
+    }
+}
+
+#continue{
+    animation: yellow-flicker 2s infinite alternate;
+    color: yellow;
+    font-size: 4rem;
+
+    &:hover{
+        color: white;    
+    }
+}
+
